@@ -35,8 +35,16 @@ while p3.upper() not in 'SN':
 if p5.upper() == 'S':
     pontos += 1
 
-
-print(pontos)
+if pontos == 5:
+    print('#'*10,' ASSASSINO ','#'*10)
+elif pontos == 4 or pontos == 3:
+    print('#'*10,' CÚMPLICE ','#'*10)
+elif pontos == 2:
+    print('#'*10,' NECESSÁRIO OUTRA INVESTIGAÇÃO ','#'*10)
+else:
+    print('#'*10,' LIBERADO ','#'*10)
+    
+print(f'Nº de pontuação: {pontos}')
     
     
 
