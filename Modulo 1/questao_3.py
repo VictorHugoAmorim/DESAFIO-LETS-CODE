@@ -1,24 +1,41 @@
-while True:
-    p1 = str(input('Mora perto da vítima? [S/N]\n'))
-    p2 = str(input('Já trabahlou com a vítima? [S/N]\n'))
-    p3 = str(input('Telefonou para a vítima? [S/N]\n'))
-    p4 = str(input('Esteve no local do crime [S/N]\n'))
-    p5 = str(input('Devia para a Vítima? [S/N]\n'))
-    break
-
 pontos = 0
 
-if p1 == 'S':
+p1 = str(input('Mora perto da vítima? [S/N]\n'))
+while p1.upper() not in 'SN':
+    print('Favor digite apenas S ou N')
+    p1 = str(input('Mora perto da vítima? [S/N]\n'))
+if p1.upper() == 'S':
     pontos += 1
-if p2 == 'S':
+
+p2 = str(input('Já trabalhou com a vítima? [S/N]\n'))
+while p2.upper() not in 'SN':
+    print('Favor digite apenas S ou N')
+    p2 = str(input('Já trabalhou com a vítima? [S/N]\n'))
+if p2.upper() == 'S':
     pontos += 1
-if p3 == 'S':
-    pontos +=1
-if p4 == 'S':
+
+p3 = str(input('Telefonou para a vítima? [S/N]\n'))
+while p3.upper() not in 'SN':
+    print('Favor digite apenas S ou N')
+    p3 = str(input('Telefonou para a vítima? [S/N]\n'))
+if p3.upper() == 'S':
     pontos += 1
-if p5 == 'S':
-    pontos +=1
-    
+
+p4 = str(input('Esteve no local do crime [S/N]\n'))
+while p4.upper() not in 'SN':
+    print('Favor digite apenas S ou N')
+    p4 = str(input('Esteve no local do crime  [S/N]\n'))
+if p4.upper() == 'S':
+    pontos += 1   
+
+p5 = str(input('Devia para a Vítima? [S/N]\n'))
+while p3.upper() not in 'SN':
+    print('Favor digite apenas S ou N')
+    p5 = str(input('Devia para a Vítima? [S/N]\n'))
+if p5.upper() == 'S':
+    pontos += 1
+
+
 print(pontos)
     
     
